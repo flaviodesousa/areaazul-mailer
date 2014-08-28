@@ -8,9 +8,10 @@ var message = {
    subject: 'Nodemailer', // subject
    html: '<p><b>Hello Node</b> Teste, teste, teste... /p> <p> Teste do nodemailer</p>',
 }*/
-
-nodemailer.enviarEmail(message, function(result) { //callback
-    if (result) {
-        console.log(result);
-    } 
-});
+exports.emailer = function(message, func){
+	nodemailer.enviarEmail(message, function(result) { //callback
+	    if (result) {
+	        console.log(result);
+	    } 
+	});
+}
