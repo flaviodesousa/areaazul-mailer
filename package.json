@@ -2,13 +2,12 @@
     "name": "areaazul-mailer",
     "version": "0.0.1",
     "private": true,
-    "main": "mailer.js",
+    "main": "areaazul-mailer.js",
     "scripts": {
         "start": "node ./app.js"
     },
     "author": "Jefferson Souza e Silva",
     "dependencies": {
 	      "nodemailer": "0.3.29"
-	
     }
 }
