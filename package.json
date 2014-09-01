@@ -2,7 +2,7 @@
     "name": "areaazul-mailer",
     "version": "0.0.1",
     "private": true,
-    "main": "areaazulmailer.js",
+    "main": "areaazul-mailer.js",
     "scripts": {
         "start": "node ./app.js"
     },
