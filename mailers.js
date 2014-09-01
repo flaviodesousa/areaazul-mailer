@@ -1,1 +1,1 @@
-module.exports.areazul-mailer = = require('./areazul-mailer');
+module.exports.areazul-mailer = require('./areazul-mailer');
