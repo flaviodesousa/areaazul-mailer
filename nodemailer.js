@@ -5,8 +5,8 @@ var nodemailer = require("nodemailer");
  var serviceConfig = nodemailer.createTransport("SMTP", {
      host: 'smtp.mandrillapp.com',
      auth: {
-        user: 'jeffersonarar@hotmail.com',
-        pass: 'lKuS1seNhNa5OjRoUTTRjQ'
+        user: 'cadastro@areaazul.org',
+        pass: 'MnyAgaqNZAIKWuqLFzSt-w'
     }
 });
 
