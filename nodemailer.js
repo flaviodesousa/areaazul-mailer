@@ -5,8 +5,10 @@ var nodemailer = require("nodemailer");
  var serviceConfig = nodemailer.createTransport("SMTP", {
      host: 'smtp.mandrillapp.com',
      auth: {
+
         user: 'cadastro@areaazul.org',
         pass: 'MnyAgaqNZAIKWuqLFzSt-w'
+
     }
 });
 
