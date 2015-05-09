@@ -2,23 +2,29 @@
 
 var nodemailer = require("nodemailer");
 
-var serviceConfig = nodemailer.createTransport("SMTP", {
-    host: 'smtp.mandrillapp.com',
-    auth: {
-        user: 'cadastro@areaazul.org',
-        pass: 'MnyAgaqNZAIKWuqLFzSt-w'
-    }
-});
+if (! nodemailer.serviceConfig) {
+    var emailUser = process.env.AREAAZUL_EMAIL_USER || 'cadastro@areaazul.org';
+    var emailPassword = process.env.AREAAZUL_EMAIL_PASSWORD || 'MnyAgaqNZAIKWuqLFzSt-w';
+    nodemailer.serviceConfig = nodemailer.createTransport(
+        "SMTP",
+        {
+            host: 'smtp.mandrillapp.com',
+            auth: {
+                user: emailUser,
+                pass: emailPassword
+            }
+        }
+    );
+}
 
 exports.enviarEmail = function(message, func) {
-    serviceConfig.sendMail({ //email options
-        from: message.from, // E-mail de Origeme
+    nodemailer.serviceConfig.sendMail({ //email options
+        from: message.from, // E-mail de Origem
         to: message.to,
         cc: message.cc,
         subject: message.subject, // subject
         html: message.html
     }, function(error, response) { //callback
-        serviceConfig.close();
         if (error) {
             return func(error);
         } else {
