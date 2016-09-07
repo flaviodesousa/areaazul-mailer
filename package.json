@@ -1,9 +1,11 @@
 {
   "name": "areaazul-mailer",
   "version": "0.0.4",
-  "private": true,
   "main": "areaazul-mailer.js",
   "author": "Jefferson Souza e Silva <jeffersonarar@areaazul.org>",
+  "publishConfig": {
+    "registry": "http://npm.flaviodesousa.com"
+  },
   "dependencies": {
     "nodemailer": "^0.7.1"
   },
