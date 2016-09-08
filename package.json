@@ -1,10 +1,18 @@
 {
   "name": "areaazul-mailer",
   "version": "0.0.4",
+  "license": "UNLICENSED",
+  "author": {
+    "name": "Jefferson Souza e Silva",
+    "email": "jeffersonarar@areaazul.org"
+  },
   "main": "areaazul-mailer.js",
-  "author": "Jefferson Souza e Silva <jeffersonarar@areaazul.org>",
   "publishConfig": {
     "registry": "http://npm.flaviodesousa.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:solutions-inf-br/areaazul-mailer.git"
   },
   "dependencies": {
     "nodemailer": "^0.7.1"
