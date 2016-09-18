@@ -8,7 +8,7 @@
   },
   "main": "areaazul-mailer.js",
   "publishConfig": {
-    "registry": "http://npm.flaviodesousa.com"
+    "registry": "https://npm.flaviodesousa.com"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
     "nodemailer": "^0.7.1"
   },
   "devDependencies": {
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.1",
     "gulp-release-tasks": "0.0.3"
   }
 }
