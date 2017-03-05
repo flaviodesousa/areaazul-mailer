@@ -3,14 +3,16 @@
 var nodemailer = require('nodemailer');
 
 if (!nodemailer.serviceConfig) {
-  var emailUser = process.env.AREAAZUL_EMAIL_USER ||
+  const emailUser = process.env.AREAAZUL_EMAIL_USER ||
     'postmaster@areaazul.org';
-  var emailPassword = process.env.AREAAZUL_EMAIL_PASSWORD ||
+  const emailPassword = process.env.AREAAZUL_EMAIL_PASSWORD ||
     '5cea971133b5e34ebb58cc9c151a25d9';
+  const smtpServer = process.env.AREAAZUL_EMAIL_SMTP_SERVER ||
+    'smtp.mailgun.org',
   nodemailer.serviceConfig = nodemailer.createTransport(
     'SMTP',
     {
-      host: AREAAZUL_EMAIL_SMTP_SERVER || 'smtp.mailgun.org',
+      host: smtpServer,
       auth: {
         user: emailUser,
         pass: emailPassword,
