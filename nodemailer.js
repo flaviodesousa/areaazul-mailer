@@ -8,7 +8,8 @@ if (!nodemailer.serviceConfig) {
   const emailPassword = process.env.AREAAZUL_EMAIL_PASSWORD ||
     '5cea971133b5e34ebb58cc9c151a25d9';
   const smtpServer = process.env.AREAAZUL_EMAIL_SMTP_SERVER ||
-    'smtp.mailgun.org',
+    'smtp.mailgun.org';
+
   nodemailer.serviceConfig = nodemailer.createTransport(
     'SMTP',
     {
