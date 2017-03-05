@@ -4,13 +4,13 @@ var nodemailer = require('nodemailer');
 
 if (!nodemailer.serviceConfig) {
   var emailUser = process.env.AREAAZUL_EMAIL_USER ||
-    'cadastro@areaazul.org';
+    'postmaster@areaazul.org';
   var emailPassword = process.env.AREAAZUL_EMAIL_PASSWORD ||
-    'MnyAgaqNZAIKWuqLFzSt-w';
+    '5cea971133b5e34ebb58cc9c151a25d9';
   nodemailer.serviceConfig = nodemailer.createTransport(
     'SMTP',
     {
-      host: 'smtp.mandrillapp.com',
+      host: AREAAZUL_EMAIL_SMTP_SERVER || 'smtp.mailgun.org',
       auth: {
         user: emailUser,
         pass: emailPassword,
