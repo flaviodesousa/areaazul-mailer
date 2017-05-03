@@ -1,12 +1,11 @@
 {
   "name": "areaazul-mailer",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "license": "UNLICENSED",
-  "author": {
-    "name": "Jefferson Souza e Silva",
-    "email": "jeffersonarar@areaazul.org"
-  },
   "main": "areaazul-mailer.js",
+  "scripts": {
+    "test": "mocha"
+  },
   "publishConfig": {
     "registry": "https://npm.flaviodesousa.com"
   },
@@ -15,10 +14,13 @@
     "url": "git@bitbucket.org:solutions-inf-br/areaazul-mailer.git"
   },
   "dependencies": {
-    "nodemailer": "^0.7.1"
+    "bluebird": "^3.5.0",
+    "nodemailer": "^4.0.1"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
     "gulp": "^3.9.1",
-    "gulp-release-tasks": "0.0.3"
+    "gulp-release-tasks": "0.0.3",
+    "mocha": "^3.3.0"
   }
 }
