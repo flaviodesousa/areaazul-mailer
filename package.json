@@ -1,6 +1,6 @@
 {
-  "name": "areaazul-mailer",
-  "version": "1.0.0",
+  "name": "@areaazul/mailer",
+  "version": "1.0.1",
   "license": "UNLICENSED",
   "main": "areaazul-mailer.js",
   "scripts": {
@@ -14,13 +14,13 @@
     "url": "git@bitbucket.org:solutions-inf-br/areaazul-mailer.git"
   },
   "dependencies": {
-    "bluebird": "^3.5.0",
-    "nodemailer": "^4.0.1"
+    "bluebird": "^3.5.1",
+    "nodemailer": "^4.6.5"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
+    "chai": "^4.1.2",
     "gulp": "^3.9.1",
     "gulp-release-tasks": "0.0.3",
-    "mocha": "^3.3.0"
+    "mocha": "^5.2.0"
   }
 }
